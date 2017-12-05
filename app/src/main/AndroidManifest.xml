@@ -14,17 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DownloadDemo.DownloadActivity">
+        <activity android:name=".RxJava_Network.RxJavaNetwork">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity android:name=".ContentResolverActivity" />
         <activity android:name=".NoticeActivity" />
         <activity android:name=".PhotoActivity"></activity>
+        <activity android:name=".DownloadDemo.DownloadActivity"></activity>
+        <activity android:name=".RxJavaDemo.MainActivity"></activity>
 
         <!--<provider-->
         <!--android:name="android.support.v4.content.FileProvider"-->

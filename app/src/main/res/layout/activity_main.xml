@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.daledawson.products.somedemo.MainActivity">
+    tools:context="com.daledawson.products.somedemo.RxJavaDemo.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
