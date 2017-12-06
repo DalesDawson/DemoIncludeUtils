@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.daledawson.products.somedemo.R;
 
-import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 
 import java.io.IOException;
@@ -31,9 +30,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+//import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import rx.subscriptions.CompositeSubscription;
+//import rx.subscriptions.CompositeSubscription;
 
 
 /**
@@ -49,7 +48,7 @@ public class RxJavaNetwork extends AppCompatActivity {
     private static final String TAG = "NetWork";
 
     private Subscription subscription;
-    private CompositeSubscription compositeSubscription = new CompositeSubscription();
+//    private CompositeSubscription compositeSubscription = new CompositeSubscription();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -78,7 +77,7 @@ public class RxJavaNetwork extends AppCompatActivity {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+//                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
         IpServiceForPost ipService = retrofit.create(IpServiceForPost.class);
 //        subscription = ipService.getIpMsg(ip).subscribeOn(Schedulers.io())
