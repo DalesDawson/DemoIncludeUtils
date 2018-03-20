@@ -10,7 +10,10 @@ android {
         exclude 'META-INF/maven/data.domybox.com/data.sdk/pom.xml'
         exclude 'META-INF/LICENSE.txt'
     }
-
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        // ... and any other excludes go here
+    }
     defaultConfig {
         applicationId "com.daledawson.products.somedemo"
         minSdkVersion 15
@@ -35,7 +38,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+//    compile 'com.squareup.okhttp3:okhttp:3.4.1'
     //retrofit
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     //Gson converter
@@ -49,4 +52,6 @@ dependencies {
 
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+
+    compile 'com.loopj.android:android-async-http:1.4.9'
 }
