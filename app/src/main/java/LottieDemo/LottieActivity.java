@@ -33,7 +33,7 @@ public class LottieActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lottie_activity);
-        animationView = (LottieAnimationView) findViewById(R.id.animationView);
+        animationView = findViewById(R.id.animationView);
         seekBar = findViewById(R.id.seekBar);
         btnStart = findViewById(R.id.btn_start);
         btnPause = findViewById(R.id.btn_pause);
