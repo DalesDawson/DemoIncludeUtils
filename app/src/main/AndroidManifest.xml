@@ -10,12 +10,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/haha"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/haha"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".AsyncHttpClient.AsyncHttpclientActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="LottieDemo.LottieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,9 +27,9 @@
         <activity android:name=".PhotoActivity"></activity>
         <activity android:name=".DownloadDemo.DownloadActivity"></activity>
         <activity android:name=".RxJavaDemo.MainActivity"></activity>
-        <activity android:name=".RxJava_Network.RxJavaNetwork"></activity>
         <activity android:name=".Retrofit.RetrofitActivity"></activity>
-
+        <activity android:name=".AsyncHttpClient.AsyncHttpclientActivity"></activity>
+        <activity android:name=".RxJava_Network.RxJavaNetwork"/>
         <!--<provider-->
         <!--android:name="android.support.v4.content.FileProvider"-->
         <!--android:authorities="com.example.cameraalbumtest.fileprovider"-->
