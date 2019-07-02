@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieComposition;
@@ -44,7 +45,7 @@ public class LottieActivity extends AppCompatActivity implements View.OnClickLis
         btnResume.setOnClickListener(this);
         btnCancel.setOnClickListener(this);
         LottieComposition.Factory.fromAssetFileName
-                (this, "LottieLogo2.json",
+                (this, "lottiefiles/i'm_thirsty!.json",
                         new OnCompositionLoadedListener() {
                             @Override
                             public void onCompositionLoaded(@Nullable LottieComposition composition) {
@@ -63,7 +64,8 @@ public class LottieActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onAnimationEnd(Animator animator) {
                 Log.d(TAG, "-----onAnimationEnd");
-                startActivity(new Intent(LottieActivity.this, RxJavaNetwork.class));
+//                startActivity(new Intent(LottieActivity.this, RxJavaNetwork.class));
+                Toast.makeText(LottieActivity.this,"动画结束！！",Toast.LENGTH_SHORT).show();
             }
 
             @Override

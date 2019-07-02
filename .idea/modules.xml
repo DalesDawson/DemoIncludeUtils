@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/DemoIncludeUtils.iml" filepath="$PROJECT_DIR$/DemoIncludeUtils.iml" />
       <module fileurl="file://D:\Demo\DemoIncludeUtils\SomeDemo.iml" filepath="D:\Demo\DemoIncludeUtils\SomeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zqlibrary/zqlibrary.iml" filepath="$PROJECT_DIR$/zqlibrary/zqlibrary.iml" />
     </modules>
   </component>
 </project>
